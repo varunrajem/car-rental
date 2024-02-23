@@ -5,7 +5,7 @@ const Navbar = () => {
   const NavLinks = [
     {
       name: 'Home',
-      path: '/home'
+      path: '/'
     },
     {
       name: 'Rent Car',
