@@ -12,7 +12,7 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosPricetag } from "react-icons/io";
 import { GrLicense } from "react-icons/gr";
 import { TiCancel } from "react-icons/ti";
-import Contact from "@/components/contact"
+import Contact from "@/components/Contact"
 
 const page = () => {
   return (
