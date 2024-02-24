@@ -1,43 +1,43 @@
 "use client"
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { useState } from "react"
+
 
 const Navbar = () => {
-  const pathname = usePathname()
-  console.log(pathname)
+  const [currenttab, setCurrentTab] = useState("Home")
+
 
   const NavLinks = [
     {
       name: 'Home',
-      path: '/'
+      path: '#hero'
     },
     {
       name: 'Rent Car',
-      path: '/rentcar'
+      path: '#inventory'
     },
     {
       name: 'Contact Us',
-      path: '/contact'
+      path: '#contact'
     },
     {
-      name: 'About Us',
-      path: '/about'
+      name: 'Why Us',
+      path: '#choose'
     },
     {
-      name: 'Blog',
-      path: '/blog'
+      name: 'Achievement',
+      path: '#achievement'
     },
   ]
   return (
     <>
-      <div className="flex justify-between items-center w-full h-16 shadow-sm px-8 sticky">
+      <div className="flex justify-between items-center w-full h-16 shadow-sm px-8 sticky top-0 z-30 bg-white">
         <p className="text-xl font-bold">DEV VARUN</p>
         <div className="flex gap-8">{
           NavLinks.map((e, i) => {
             return (
               <div key={i}>
-                <Link href={e.path}>{e.name}</Link>
+                <a onClick={() => setCurrentTab(e.name)} className={currenttab == e.name && 'text-blue-600 font-bold'} href={e.path}>{e.name}</a>
               </div>
             )
           })

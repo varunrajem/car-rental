@@ -4,7 +4,7 @@ import Heropic from '../../public/f.png'
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-center items-center w-full h-screen bg-gray-100">
+      <div id="hero" className="flex justify-center items-center w-full h-screen bg-gray-100">
         <div className="w-[50%] px-8">
           <p className="text-6xl font-bold">Drive Your Way<br />to Freedom
             <span className="text-blue-500">&nbsp;Rent</span>&nbsp;a Car<br />Today</p>

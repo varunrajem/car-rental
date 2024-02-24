@@ -1,7 +1,7 @@
 const Choose = (props) => {
   return (
     <>
-      <div className='flex justify-center items-center h-40'>
+      <div id="choose" className='flex justify-center items-center h-40'>
         <div className='w=[30%]'>
           <div className="flex justify-center items-center bg-blue-500 p-6 rounded-sm">
             {props.icon}

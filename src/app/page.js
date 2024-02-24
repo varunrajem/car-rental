@@ -51,10 +51,10 @@ const page = () => {
         <p className="text-4xl font-bold">Our<span className="text-blue-500">&nbsp;Achievement</span></p>
       </div>
       <div className="grid grid-cols-4 px-12 py-2 gap-4">
-        <Achievement data='5000+' desc='Active Members' />
-        <Achievement data='6000+' desc='Car Models' />
-        <Achievement data='1000+' desc='Car Model' />
-        <Achievement data='10k+' desc='Positive Rating' />
+        <Achievement data='5000' time='5' desc='Active Members' />
+        <Achievement data='6000' time='5' desc='Car Models' />
+        <Achievement data='1000' time='5' desc='Car Model' />
+        <Achievement data='100000' time='5' desc='Positive Rating' />
       </div>
 
       {/****** CONTACT ******/}

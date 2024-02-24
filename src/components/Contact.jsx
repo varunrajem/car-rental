@@ -4,7 +4,7 @@ import banner from '../../public/Ferrari.png'
 const Contact = () => {
   return (
     <>
-      <div className="flex justify-between items-center bg-gradient-to-r from-rose-100 to-teal-100">
+      <div id="contact" className="flex justify-between items-center bg-gradient-to-r from-rose-100 to-teal-100">
         <div className="w-1/2 px-6">
           <p className="text-3xl font-bold">Ready To Get Start ?</p>
           <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu volutpat.

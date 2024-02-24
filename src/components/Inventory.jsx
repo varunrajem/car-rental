@@ -6,7 +6,7 @@ import { IoIosSpeedometer } from "react-icons/io";
 const Inventory = (props) => {
   return (
     <>
-      <div className="h-auto w-auto shadow-md rounded-md">
+      <div id="inventory" className="h-auto w-auto shadow-md rounded-md">
         <Image src={props.pic} alt="Image" className="p-2 rounded-lg hover:scale-105 transition duration-500 cursor-pointer" />
         <div className="px-4">
           <p className="text-md font-bold">{props.name}</p>
