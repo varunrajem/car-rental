@@ -37,7 +37,7 @@ const Navbar = () => {
           NavLinks.map((e, i) => {
             return (
               <div key={i}>
-                <a onClick={() => setCurrentTab(e.name)} className={currenttab == e.name && 'text-blue-600 font-bold'} href={e.path}>{e.name}</a>
+                <a onClick={() => setCurrentTab(e.name)} className={currenttab == e.name ? 'text-blue-600 font-bold' : ''} href={e.path}>{e.name}</a>
               </div>
             )
           })
