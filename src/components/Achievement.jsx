@@ -1,12 +1,19 @@
+"use client"
+
+import CountUp from 'react-countup';
 
 
 const Achievement = (props) => {
   return (
     <>
-
-      <div className="flex justify-center items-center h-[140px] w-full shadow-lg bg-white rounded-sm text-center">
+      <div id='achievement' className="flex justify-center items-center h-[140px] w-full shadow-lg bg-white rounded-sm text-center">
         <div>
-          <p className="font-bold text-xl">{props.data}</p>
+          <p className="font-bold text-xl">
+            <CountUp
+              end={props.data}
+              duration={props.time}
+            />
+          </p>
           <p>{props.desc}</p>
         </div>
 
