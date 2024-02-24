@@ -22,8 +22,47 @@ const Hero = () => {
 
       {/*******  Search ********/}
 
-
-
+      <div className="flex justify-center relative -top-16">
+        <div className="flex w-[70%] h-36 shadow-xl bg-white rounded-md">
+          <div className="flex justify-between items-center w-full px-8">
+            <div>
+              <p className="text-blue-600 font-bold">Pickup Location</p>
+              <input
+                type="search"
+                className="border border-black focus:outline-none rounded-xl px-3 w-40 bg-gray-200"
+                placeholder="Your Location"
+              />
+            </div>
+            <div>
+              <p className="text-blue-600 font-bold">Pickup Date</p>
+              <input
+                type="date"
+                className="border border-black focus:outline-none rounded-xl px-3 w-40 bg-gray-200"
+                placeholder="Date"
+              />
+            </div>
+            <div>
+              <p className="text-blue-600 font-bold">Pickup Time</p>
+              <input
+                type="time"
+                className="border border-black  focus:outline-none rounded-xl px-3 w-40 bg-gray-200"
+                placeholder="Time"
+              />
+            </div>
+            <div>
+              <p className="text-blue-600 font-bold">Return Time</p>
+              <input
+                type="time"
+                className="border border-black  focus:outline-none rounded-xl px-3 w-40 bg-gray-200"
+                placeholder="Time"
+              />
+            </div>
+            <div className="mt-4">
+              <button className="bg-blue-500 px-6 py-2 rounded-full">SUBMIT</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     </>
