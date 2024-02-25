@@ -17,7 +17,7 @@ import Contact from "@/components/Contact"
 const page = () => {
   return (
     <>
-      <div>
+      <div className="">
         <Hero />
       </div>
 
@@ -26,7 +26,7 @@ const page = () => {
       <div className="flex justify-center py-8">
         <p className="text-4xl font-bold">Latest<span className="text-blue-500">&nbsp;Inventory</span></p>
       </div>
-      <div className="grid grid-cols-3 px-12 py-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-12 py-2 gap-4">
         <Inventory pic={Lamborgini} name='Lamborgini' seats='2 seats' fuel='10L' speed='440km/h' price='8000Rs/hr' />
         <Inventory pic={BMW} name='BMW' seats='2 seats' fuel='12L' speed='330km/h' price='4000Rs/hr' />
         <Inventory pic={Mercedes} name='Mercedes' seats='4 seats' fuel='10L' speed='320 km/h' price='6000Rs/hr' />
@@ -39,18 +39,18 @@ const page = () => {
       <div className="flex justify-center py-8">
         <p className="text-4xl font-bold">Why<span className="text-blue-500">&nbsp;Choose</span>&nbsp;Us</p>
       </div>
-      <div className="grid grid-cols-2 px-12 py-2 gap-4">
-        <Choose icon=<IoIosCall size={32} /> title='24 hr Support' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu volutpat.' />
-        <Choose icon=<IoIosPricetag size={32} /> title='Best Price' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu volutpat.' />
-        <Choose icon=<GrLicense size={32} /> title='Verified License' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu volutpat.' />
-        <Choose icon=<TiCancel size={32} /> title='Free Cancellation' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu volutpat.' />
+      <div className="grid gris-cols-1 md:grid-cols-2 px-4 lg:px-12 gap-4">
+        <Choose icon=<IoIosCall size={32} /> title='24 hr Support' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu.' />
+        <Choose icon=<IoIosPricetag size={32} /> title='Best Price' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu.' />
+        <Choose icon=<GrLicense size={32} /> title='Verified License' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu.' />
+        <Choose icon=<TiCancel size={32} /> title='Free Cancellation' desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper vehicula risus eu.' />
       </div>
 
       {/****** OUR ACHEVEMENT ******/}
       <div className="flex justify-center py-8">
         <p className="text-4xl font-bold">Our<span className="text-blue-500">&nbsp;Achievement</span></p>
       </div>
-      <div className="grid grid-cols-4 px-12 py-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-12  gap-4">
         <Achievement data='5000' time='8' desc='Active Members' />
         <Achievement data='6000' time='8' desc='Car Models' />
         <Achievement data='1000' time='8' desc='Car Model' />

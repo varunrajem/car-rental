@@ -1,9 +1,9 @@
 const Choose = (props) => {
   return (
     <>
-      <div id="choose" className='flex justify-center items-center h-40'>
+      <div id="choose" className='flex justify-center items-center h-28 md:h-36'>
         <div className='w=[30%]'>
-          <div className="flex justify-center items-center bg-blue-500 p-6 rounded-sm">
+          <div className="flex justify-center items-center bg-blue-500 px-6 py-6 rounded-sm">
             {props.icon}
           </div>
 

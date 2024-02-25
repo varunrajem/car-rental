@@ -7,7 +7,7 @@ const Inventory = (props) => {
   return (
     <>
       <div id="inventory" className="h-auto w-auto shadow-md rounded-md">
-        <Image src={props.pic} alt="Image" className="p-2 rounded-lg hover:scale-105 transition duration-500 cursor-pointer" />
+        <Image src={props.pic} alt="Image" className="p-3 rounded-lg hover:scale-105 transition duration-500 cursor-pointer" />
         <div className="px-4">
           <p className="text-md font-bold">{props.name}</p>
           <div className="flex justify-between py-1">
@@ -26,7 +26,7 @@ const Inventory = (props) => {
           </div>
           <div className="flex justify-around items-center border-t border-gray-600 py-3">
             <div className="font-bold text-sm">{props.price}</div>
-            <button className="bg-blue-500 px-6 py-1 rounded-md">Book Now</button>
+            <button className="bg-blue-500 px-6 py-1 rounded-md hover:bg-blue-400">Book Now</button>
           </div>
         </div>
       </div>
