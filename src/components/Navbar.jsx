@@ -71,9 +71,9 @@ const Navbar = () => {
         {isopen ?
           <div className='absolute top-[65px] left-0 w-2/3 h-screen z-20'>
             <ul className='bg-blue-100 shadow-xl h-full'>
-              {NavLinks.map((e) => {
+              {NavLinks.map((e, i) => {
                 return (
-                  <div className='flex justify-start items-center px-3 py-1 gap-3'>
+                  <div key={i} className='flex justify-start items-center px-3 py-1 gap-3'>
                     <span className="">{e.icon}</span>
                     <li><a onClick={() => { setisOpen(!isopen); setCurrentTab(e.name) }} className={currenttab == e.name ? 'text-blue-600 font-bold' : ''} href={e.path}>{e.name}</a></li>
                   </div>
