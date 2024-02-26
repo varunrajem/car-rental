@@ -65,11 +65,11 @@ const Navbar = () => {
           {isopen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
         {isopen &&
-          <div onClick={() => setisOpen(!isopen)} className='absolute top-[65px] bg-black/75 left-0 w-full h-screen z-10'>
+          <div onClick={() => setisOpen(!isopen)} className='absolute top-[63px] bg-black/75 left-0 w-full h-screen z-10'>
           </div>
         }
         {isopen ?
-          <div className='absolute top-[65px] left-0 w-2/3 h-screen z-20'>
+          <div className='absolute top-[63px] left-0 w-2/3 h-screen z-20'>
             <ul className='bg-blue-100 shadow-xl h-full'>
               {NavLinks.map((e, i) => {
                 return (
